@@ -3,19 +3,51 @@
 set -e
 
 if [ ! -f /usr/local/bin/brew ]; then
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-if [ ! -d ~/dotfiles ]; then
-    cd ~
-    git clone git@github.com:Ryuichi-g/dotfiles.git
-fi
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/uedaryuuichi/.zprofile
 
-brew bundle -v --file=~/dotfiles/Brewfile
+# if [ ! -d ~/works/dotfiles ]; then
+#     cd ~
+#     git clone git@github.com:Ryuichi-g/dotfiles.git
+# fi
+
+brew bundle -v --file=~/works/dotfiles/Brewfile
 
 if [ ! -d ~/.config ]; then
     mkdir ~/.config
 fi
-stow -v -d ~/dotfiles/packages -t ~ zsh starship
+# stow -v -d ~/works/dotfiles/packages -t ~ zsh starship
 
+for f in ~/.??*
+do
+echo $f
+done
 echo "end"
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh # rust
+source $HOME/.cargo/env
+
+pyenv install 3.10.2
+pyenv global 3.10.2
+
+# pip install
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py
+rm get-pip.py
+
+npm i -g aws-cdk @aws-amplify/cli yarn typescript
+npm i -g @project-serum/anchor-cli
+sh -c "$(curl -sSfL https://release.solana.com/v1.9.1/install)"
+
+cargo install cargo-watch
+cargo install --force cargo-make
+# sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+#        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# vim ~/.config/nvim/init.vim
+
+# sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# go get -u github.com/gorilla/mux
+# go get github.com/codegangsta/gin

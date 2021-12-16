@@ -1,0 +1,30 @@
+[core]
+	excludesfile = /Users/uedaryuichi/.gitignore_global
+	autocrlf = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree 3.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Ryuichi-g
+	email = hsatlefp@gmail.com
+[commit]
+	template = /Users/uedaryuichi/.stCommitMsg
+[credential]
+	helper = cache --timeout=3600
+[init]
+	defaultBranch = main
+[includeIf "gitdir:~/works/"]
+	path = ~/.gitconfig_private
+[pull]
+	rebase = false
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	cm = commit
+	df = diff
+	gr = grep
+	ps = push

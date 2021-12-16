@@ -1,0 +1,168 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+  
+    "explorer.confirmDragAndDrop": false,
+    "git.ignoreMissingGitWarning": true,
+    "explorer.confirmDelete": false,
+    "editor.fontFamily": "'Ricty Diminished',Menlo, Monaco, 'Courier New', monospace",
+    "code-runner.runInTerminal": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.titleBarStyle": "native",
+  
+    // python
+    "python.formatting.provider": "autopep8",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": ["--ignore=E402, E501, W503"],
+    "python.formatting.autopep8Args": [
+      "--ignore",
+      "E50",
+      "--max-line-length",
+      "120",
+      "--aggressive"
+    ],
+    "python.linting.mypyEnabled": true,
+    "[python]": {
+      "editor.defaultFormatter": null
+    },
+    "python.pythonPath": "/Users/admin/.pyenv/shims/python",
+    "python.languageServer": "Default",
+    // "python.pythonPath": "/Users/uedaryuichi/opt/anaconda3/bin/python",
+    // "python.pythonPath": "/Users/uedaryuichi/.pyenv/shims/python",
+    // "python.pythonPath": "/Users/uedaryuichi/.pyenv/versions/3.8.0/bin/python",
+    // "python.pythonPath": "/usr/bin/python3",
+    // "python.pythonPath": "/Users/uedaryuichi/.local/share/virtualenvs/eforlad-MqRn1TAP/lib/python3.8/site-packages",
+  
+    "emmet.includeLanguages": {
+      "django-html": "html",
+      "javascript": "javascriptreact"
+    },
+    "workbench.editorAssociations": {
+      "*.ipynb": "jupyter-notebook"
+    },
+    // "liveshare.authenticationProvider": "GitHub",
+    "mssql.connections": [
+      {
+        "server": "{{put-server-name-here}}",
+        "database": "{{put-database-name-here}}",
+        "user": "{{put-username-here}}",
+        "password": ""
+      }
+    ],
+    "editor.tabSize": 4,
+    "npm.enableRunFromFolder": true,
+    "sqltools.useNodeRuntime": true,
+    "material-ui-snippets.showNotesOnStartup": false,
+    "workbench.iconTheme": "eq-material-theme-icons-palenight",
+    "editor.formatOnSave": true,
+    "security.workspace.trust.untrustedFiles": "open",
+  
+    //typescript
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    // "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    // "php-cs-fixer.lastDownload": 1633913035559,
+    "go.toolsManagement.autoUpdate": true,
+  
+    // 自動セーブ
+    "markdown-pdf.convertOnSave": true,
+    // 出力フォーマット: pdf, html, png, jpeg
+    "markdown-pdf.type": [
+      "html"
+    ],
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+    },
+    "[go]": {
+      "editor.formatOnSave": false,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": false
+      }
+    },
+    "go.formatTool": "gofmt",
+    "html.format.endWithNewline": true,
+    "html.format.indentInnerHtml": true,
+    "html.format.indentHandlebars": true,
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/dist/css"
+      }
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "tabnine.experimentalAutoImports": true,
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.lastDownload": 1646100939075,
+    "git.confirmSync": false,
+    "git.ignoreRebaseWarning": true,
+    "editor.renderWhitespace": "all",
+    "bracketPairColorizer.depreciation-notice": false,
+    "window.zoomLevel": 2,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "redhat.telemetry.enabled": true,
+  
+     //javascript
+     "javascript.updateImportsOnFileMove.enabled": "always",
+     "[javascript]": {
+       "editor.tabSize": 2,
+       "editor.insertSpaces": true,
+       "editor.formatOnSave": true,
+       "editor.codeActionsOnSave": {
+         "source.fixAll.eslint": true // <-- eslintでリント
+       },
+       // デフォルトフォーマッタをprettierに
+       "editor.defaultFormatter": "esbenp.prettier-vscode",
+     },
+    "WillLuke.nextjs.hasPrompted": true,
+    "[javascriptreact]": {
+      "editor.tabSize": 2,
+      "editor.insertSpaces": true,
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true // <-- eslintでリント
+      },
+      // デフォルトフォーマッタをprettierに
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[yaml]": {
+      "editor.tabSize": 2,
+      "editor.defaultFormatter": "redhat.vscode-yaml",
+      "editor.formatOnSave": true,
+    },
+    "yaml.schemas": {
+      "https://d33vqc0rt9ld30.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json": [
+          "*.cf.yaml",
+          "*.cf.yml",
+          "cloud*formation/*.yaml",
+          "cloud*formation/*.yml"
+      ]
+    },
+    "yaml.customTags": [
+        "!Ref",
+        "!Sub",
+        "!Join sequence",
+        "!FindInMap sequence",
+        "!GetAtt scalar sequence",
+        "!Base64 mapping",
+        "!GetAZs",
+        "!Select sequence",
+        "!Split sequence",
+        "!ImportValue",
+        "!Condition",
+        "!Equals sequence",
+        "!And",
+        "!If",
+        "!Not",
+        "!Or",
+        "!Cidr",
+        "!GetAtt",
+    ],
+  }
+  
