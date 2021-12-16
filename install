@@ -8,8 +8,14 @@ fi
 
 if [ ! -d ~/dotfiles ]; then
     cd ~
-    git clone 
+    git clone git@github.com:Ryuichi-g/dotfiles.git
 fi
+
 brew bundle -v --file=~/dotfiles/Brewfile
+
+if [ ! -d ~/.config ]; then
+    mkdir ~/.config
+fi
+stow -v -d ~/dotfiles/packages -t ~ zsh starship
 
 echo "end"
