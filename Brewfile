@@ -42,6 +42,7 @@ brew "wget"
 brew "cfssl"
 brew "kind"
 brew "hping"
+brew "kn"
 
 # brew "fzf"
 # brew "asdf"
