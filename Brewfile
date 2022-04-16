@@ -43,6 +43,7 @@ brew "cfssl"
 brew "kind"
 brew "hping"
 brew "kn"
+brew "knative-sandbox/kn-plugins/quickstart"
 
 # brew "fzf"
 # brew "asdf"
