@@ -45,6 +45,7 @@ brew "hping"
 brew "kn"
 brew "vitess"
 brew "knative-sandbox/kn-plugins/quickstart"
+brew "skaffold"
 
 # brew "fzf"
 # brew "asdf"
