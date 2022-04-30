@@ -47,6 +47,7 @@ brew "vitess"
 brew "knative-sandbox/kn-plugins/quickstart"
 brew "skaffold"
 brew "etcd"
+brew "jump"
 
 # brew "fzf"
 # brew "asdf"
