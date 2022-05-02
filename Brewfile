@@ -48,6 +48,7 @@ brew "knative-sandbox/kn-plugins/quickstart"
 brew "skaffold"
 brew "etcd"
 brew "jump"
+brew "krew"
 
 # brew "fzf"
 # brew "asdf"
