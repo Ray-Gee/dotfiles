@@ -49,6 +49,7 @@ brew "skaffold"
 brew "etcd"
 brew "jump"
 brew "krew"
+brew "flutter"
 
 # brew "fzf"
 # brew "asdf"
