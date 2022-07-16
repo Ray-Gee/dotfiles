@@ -44,6 +44,8 @@ sh -c "$(curl -sSfL https://release.solana.com/v1.9.1/install)"
 
 cargo install cargo-watch
 cargo install --force cargo-make
+
+curl https://bun.sh/install | bash
 # sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 #        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 # vim ~/.config/nvim/init.vim
