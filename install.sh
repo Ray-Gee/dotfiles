@@ -53,3 +53,24 @@ curl https://bun.sh/install | bash
 # sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # go get -u github.com/gorilla/mux
 # go get github.com/codegangsta/gin
+
+# シンボリックリンクの設定
+ln -sf ~/works/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/works/dotfiles/.gitconfig ~/.gitconfig
+
+# macOS設定のインポート
+DEFAULTS_DIR="$HOME/works/dotfiles/defaults"
+if [ -d "$DEFAULTS_DIR" ]; then
+    # 個別ドメインの設定をインポート
+    for plist in "$DEFAULTS_DIR"/*.plist; do
+        if [[ $plist != *"global.plist" && $plist != *"current.plist" ]]; then
+            domain=$(basename "$plist" .plist | tr '_' '.')
+            defaults import "$domain" "$plist"
+        fi
+    done
+
+    # 設定の反映
+    killall Dock
+    killall Finder
+    killall SystemUIServer
+fi

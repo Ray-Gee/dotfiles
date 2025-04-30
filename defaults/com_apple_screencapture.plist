@@ -1,0 +1,17 @@
+{
+    "disable-shadow" = 1;
+    "last-analytics-stamp" = "767673287.243607";
+    "last-selection" =     {
+        Height = "915.75";
+        Width = 1704;
+        X = 4;
+        Y = "77.625";
+    };
+    "last-selection-display" = 0;
+    location = "~/\\U30b9\\U30af\\U30b7\\U30e7";
+    "location-last" = "~/\\U30b9\\U30af\\U30b7\\U30e7";
+    style = selection;
+    target = file;
+    type = JPG;
+    video = 1;
+}
