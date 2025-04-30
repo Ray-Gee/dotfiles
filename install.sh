@@ -5,6 +5,8 @@ set -e
 if [ ! -f /usr/local/bin/brew ]; then
     # /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    # Homebrewの環境変数を読み込む
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
