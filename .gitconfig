@@ -5,10 +5,10 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree 3.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = Ryuichi-g
+	name = RyuichiUeda
 	email = hsatlefp@gmail.com
 [commit]
 	template = /Users/uedaryuichi/.stCommitMsg
@@ -16,8 +16,10 @@
 	helper = cache --timeout=3600
 [init]
 	defaultBranch = main
-[includeIf "gitdir:~/works/"]
-	path = ~/.gitconfig_private
+[includeIf "gitdir:~/universe_git/"]
+	path = ~/.gitconfig_company
+# [includeIf "gitdir:~/works/"]
+# 	path = ~/.gitconfig_second
 [pull]
 	rebase = false
 [alias]
@@ -28,3 +30,10 @@
 	df = diff
 	gr = grep
 	ps = push
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[push]
+	default = current

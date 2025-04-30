@@ -1,0 +1,163 @@
+{
+    "cursor.chat.alwaysSearchWeb": true,
+    "cursor.chat.smoothStreaming": true,
+    "editor.defaultFormatter": "vscode.html-language-features",
+    "editor.fontFamily": "'Ricty Diminished', Menlo, Monaco, 'Courier New', monospace",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "git.openRepositoryInParentFolders": "never",
+    "editor.accessibilitySupport": "off",
+    "editor.largeFileOptimizations": false,
+    "window.restoreWindows": "all",
+    "workbench.colorTheme": "Tokyo Night Gogh",
+    "workbench.iconTheme": "material-icon-theme",
+    // "workbench.startupEditor": "newUntitledFile",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.renderWhitespace": "all",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // "github.copilot.editor.enableAutoCompletions": true,
+    "go.formatTool": "goimports",
+    "go.toolsManagement.autoUpdate": true,
+    "go.useLanguageServer": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.titleBarStyle": "native",
+    "window.zoomLevel": 2,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.countBadge": "all",
+    "git.enableSmartCommit": true,
+    "git.ignoreMissingGitWarning": true,
+    "git.ignoreRebaseWarning": true,
+    // "python.linting.enabled": true,
+    // "python.linting.pylintEnabled": false,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.languageServer": "Default",
+    // "python.formatting.provider": "autopep8",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "rust-analyzer.runnables.extraEnv": null,
+    // "python.linting.flake8Args": [
+    //     "--ignore=E402, E501, W503"
+    // ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    // "python.formatting.autopep8Args": [
+    //     "--ignore",
+    //     "E50",
+    //     "--max-line-length",
+    //     "120",
+    //     "--aggressive"
+    // ],
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // "yaml.schemas": {
+    //     "https://d33vqc0rt9ld30.cloudfront.net/latest/gzip/CloudFormationResourceSpecification.json": [
+    //         "*.cf.yaml",
+    //         "*.cf.yml",
+    //         "cloud*formation/*.yaml",
+    //         "cloud*formation/*.yml"
+    //     ]
+    // },
+    // "yaml.customTags": [
+    //     "!Ref",
+    //     "!Sub",
+    //     "!Join sequence",
+    //     "!FindInMap sequence",
+    //     "!GetAtt scalar sequence",
+    //     "!Base64 mapping",
+    //     "!GetAZs",
+    //     "!Select sequence",
+    //     "!Split sequence",
+    //     "!ImportValue",
+    //     "!Condition",
+    //     "!Equals sequence",
+    //     "!And",
+    //     "!If",
+    //     "!Not",
+    //     "!Or",
+    //     "!Cidr",
+    //     "!GetAtt"
+    // ],
+    "[yaml]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true,
+        "diffEditor.ignoreTrimWhitespace": false,
+    },
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "gopls": {
+        "ui.completion.usePlaceholders": true,
+        "staticcheck": true
+    },
+    "go.toolsEnvVars": {
+        "CGO_ENABLED": "1",
+        "PKG_CONFIG_PATH": "/usr/local/opt/librdkafka/lib/pkgconfig",
+        "LD_LIBRARY_PATH": "/usr/local/opt/librdkafka/lib",
+        "LIBRARY_PATH": "/usr/local/opt/librdkafka/lib"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "files.associations": {
+        "*.tpl": "go"
+    },
+    "python.createEnvironment.trigger": "off",
+    "workbench.editor.enablePreview": false,
+    "cursor.general.globalCursorIgnoreList": [
+        "",
+        "",
+        "**/credentials.json",
+        "**/credentials.*.json",
+        "**/secret.json",
+        "**/secrets.json",
+        "**/*.key",
+        "**/*.pem",
+        "**/*.pfx",
+        "**/*.p12",
+        "**/*.crt",
+        "**/*.cer",
+        "**/id_rsa",
+        "**/id_dsa",
+        "**/.ssh/id_*"
+    ]
+}
